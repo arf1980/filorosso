@@ -9,6 +9,8 @@ import { IniziativeComponent } from './components/iniziative/iniziative.componen
 import { SpecialeComponent } from './components/speciale/speciale.component';
 import { MediaComponent } from './components/media/media.component';
 import { ContattiComponent } from './components/contatti/contatti.component';
+import { NewsComponent } from './components/news/news.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ContattiComponent } from './components/contatti/contatti.component';
     IniziativeComponent,
     SpecialeComponent,
     MediaComponent,
-    ContattiComponent
+    ContattiComponent,
+    NewsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
