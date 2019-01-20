@@ -1,21 +1,23 @@
-<div id="header">
-  <div class="container"> 
-    
-    <!-- Logo -->
-    <div id="logo">
-      <h1><a href="#">FILOROSSO ONLUS</a></h1>
-      <span>Progetti di cooperazione allo sviluppo</span>
+<div [class.homepage]="isHome()">
+  <div id="header">
+    <div class="container"> 
+      
+      <!-- Logo -->
+      <div id="logo">
+        <h1><a href="#">FILOROSSO ONLUS</a></h1>
+        <span>Progetti di cooperazione allo sviluppo</span>
+      </div>
+      
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a [routerLink]="['/home']" routerLinkActive="active">Homepage</a></li>
+          <li><a [routerLink]="['/iniziative']" routerLinkActive="active" >Iniziative</a></li>
+          <li><a [routerLink]="['/speciale']" routerLinkActive="activeSpecial" >Speciale</a></li>
+          <li><a [routerLink]="['/media']" routerLinkActive="active" >Media</a></li>
+          <li><a [routerLink]="['/contatti']" routerLinkActive="active" >Chi siamo</a></li>
+        </ul>
+      </nav>
     </div>
-    
-    <!-- Nav -->
-    <nav id="nav">
-      <ul>
-        <li><a [routerLink]="['/home']" routerLinkActive="active">Homepage</a></li>
-        <li><a [routerLink]="['/iniziative']" routerLinkActive="active" >Iniziative</a></li>
-        <li><a [routerLink]="['/speciale']" routerLinkActive="activeSpecial" >Speciale</a></li>
-        <li><a [routerLink]="['/media']" routerLinkActive="active" >Media</a></li>
-        <li><a [routerLink]="['/contatti']" routerLinkActive="active" >Chi siamo</a></li>
-      </ul>
-    </nav>
   </div>
 </div>
