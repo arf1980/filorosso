@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class NavigatorComponent implements OnInit {
 
+  bgSpecial = 'url(\'./assets/BannerSpeciale.png\')';
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -17,5 +19,10 @@ export class NavigatorComponent implements OnInit {
     return this.router.url === '/'
       || this.router.url === '/home';
   }
+
+  isSpeciale(): boolean {
+    return this.router.url === '/speciale';
+  }
+
 
 }

@@ -1,21 +1,21 @@
-<div [class.homepage]="isHome()">
-  <div id="header">
+<div [class.homepage]="isHome()" >
+  <div id="header" [style.background]="isSpeciale() ? bgSpecial : ''">
     <div class="container"> 
       
       <!-- Logo -->
       <div id="logo">
-        <h1><a href="#">FILOROSSO ONLUS</a></h1>
-        <span>Progetti di cooperazione allo sviluppo</span>
+        <h1><a href="#" [style.color]="isSpeciale() ? 'rgb(235, 100, 10)' : ''">FILOROSSO ONLUS</a></h1>
+        <span [style.color]="isSpeciale() ? 'rgb(235, 100, 10)' : ''">Progetti di cooperazione allo sviluppo</span>
       </div>
       
       <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li><a [routerLink]="['/home']" routerLinkActive="active">Homepage</a></li>
-          <li><a [routerLink]="['/iniziative']" routerLinkActive="active" >Iniziative</a></li>
-          <li><a [routerLink]="['/speciale']" routerLinkActive="activeSpecial" >Speciale</a></li>
-          <li><a [routerLink]="['/media']" routerLinkActive="active" >Media</a></li>
-          <li><a [routerLink]="['/contatti']" routerLinkActive="active" >Chi siamo</a></li>
+          <li><a [style.color]="isSpeciale() ? 'rgb(235, 100, 10)' : ''" [routerLink]="['/home']" routerLinkActive="active">Homepage</a></li>
+          <li><a [style.color]="isSpeciale() ? 'rgb(235, 100, 10)' : ''" [routerLink]="['/iniziative']" routerLinkActive="active" >Iniziative</a></li>
+          <li><a [style.color]="isSpeciale() ? 'rgb(235, 100, 10)' : ''" [routerLink]="['/speciale']" routerLinkActive="activeSpecial" >Speciale</a></li>
+          <li><a [style.color]="isSpeciale() ? 'rgb(235, 100, 10)' : ''" [routerLink]="['/media']" routerLinkActive="active" >Media</a></li>
+          <li><a [style.color]="isSpeciale() ? 'rgb(235, 100, 10)' : ''" [routerLink]="['/contatti']" routerLinkActive="active" >Chi siamo</a></li>
         </ul>
       </nav>
     </div>

@@ -6,3 +6,12 @@ a.active
     border-color: rgba(255,255,255,.8);
     color: #FFF;
 }
+
+a.activeSpecial
+{
+    background: none;
+    border-radius: 40px;
+    border: 2px solid;
+    border-color: rgb(235, 100, 10);
+    color: rgb(235, 100, 10);
+}
